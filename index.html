@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div
+      class="car"
+      style="
+        position: absolute;
+        background-color: red;
+        width: 10px;
+        height: 10px;
+      "
+    ></div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+    socket.on("chat message", function (msg) {
+      //   $("#messages").append($("<li>").text(msg));
+      console.log(msg);
+      document.querySelector(".car").style.top = msg[msg.length - 1].y + "px";
+      document.querySelector(".car").style.left = msg[msg.length - 1].x + "px";
+    });
+  </script>
+</html>
