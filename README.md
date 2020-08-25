@@ -15,6 +15,10 @@ node index.js
 npx ngrok http 3000
 ```
 
-### open browser at http://localhost:3000 and on the link provided by ngrok in terminal 2
-
 ### note: ngrok needs to listen on the same port as the node app
+
+### browser:
+
+- open 1 tab at http://localhost:3000
+- and 1 tab on the link provided by ngrok in terminal 2
+- see live updates in both (red rectangle moving along x,y on the screen)
