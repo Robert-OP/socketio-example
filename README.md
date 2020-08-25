@@ -1,4 +1,6 @@
-## Socket.io & ngrok example to push the same live updates to multiple clients
+## [Socket.io](https://socket.io/) & [ngrok](https://ngrok.com/) express app
+
+Example intended to test socket.io and ngrok to push the same live updates to multiple clients
 
 ## Setup having node installed on your machine
 
